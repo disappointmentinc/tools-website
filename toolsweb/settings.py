@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g47xj&e$1^49gm3v62g0mw&o$yk=k2nn=&da2+1jk7aa4%i2w5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["toolify.up.railway.app"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://toolify.up.railway.app']
 
