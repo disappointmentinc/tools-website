@@ -26,14 +26,13 @@ SECRET_KEY = 'django-insecure-g47xj&e$1^49gm3v62g0mw&o$yk=k2nn=&da2+1jk7aa4%i2w5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'worldofjunk.com', '34.176.214.77']
 
-CSRF_TRUSTED_ORIGINS = ['https://toolify.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://worldofjunk.com']
 
 CORS_ORIGIN_WHITELIST = [
-'https://toolify.up.railway.app'
+    'https://worldofjunk.com'
 ]
-
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -142,13 +141,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_FROM_EMAIL = 'dev.ash.py@gmail.com'
+DEFAULT_FROM_EMAIL = 'webtools.search@gmail.com'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'dev.ash.py@gmail.com'
-EMAIL_HOST_PASSWORD = 'Dev.2023'
+EMAIL_HOST_USER = 'webtools.search@gmail.com'
+EMAIL_HOST_PASSWORD = 'NJZM%Vhnzix*cX27wp8^2Lm'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = 'hfqnovljglydjjej'
+EMAIL_HOST_PASSWORD = 'NJZM%Vhnzix*cX27wp8^2Lm'
 
