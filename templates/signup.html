@@ -8,7 +8,7 @@
 <section class='signup container'>
     <div class='signup-content'>
         <form class='signup-form' method="post" action="{% url 'signup' %}">
-            <h1>Signup for Toolify</h1>
+            <h1>Signup for Search Tools</h1>
             {% csrf_token %}
             {{form.as_p}}
             <div>

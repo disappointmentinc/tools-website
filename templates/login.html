@@ -8,7 +8,7 @@
 <section class='login container'>
     <div class='login-content'>
         <form class='login-form' method="post" action="{% url 'login' %}">
-            <h1 style='margin-bottom: 1rem;'>Login to Toolify</h1>
+            <h1 style='margin-bottom: 1rem;'>Login to Search Tools</h1>
             {% csrf_token %}
             {{form.as_p}}
             <div class='login-passreset-signup'>

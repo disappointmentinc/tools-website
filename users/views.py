@@ -465,6 +465,8 @@ def ip_lookup(request):
 
 def tools (request):
     return render(request, 'tools.html')
+def bookmarklets (request):
+    return render(request, 'bookmarklets.html')
 
 # def image_background_remover(request):
 #     if request.method == 'POST':

@@ -28,5 +28,6 @@ urlpatterns = [
     path('internet-speed-test/', views.internet_speed_test, name='internet-speed-test'),
     path('ip-lookup/', views.ip_lookup, name='ip-lookup'),
     path('tools/', views.tools, name='tools'),
+    path('bookmarklets/', views.bookmarklets, name='Bookmarklets'),
     # path('image-background-remover/', views.image_background_remover, name='image-background-remover'),
 ]

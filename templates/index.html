@@ -9,16 +9,16 @@
 
 <section class="home-hero container">
   <h1 class="hero-header-heading">
-    <span
-      >Effortlessly <i>enhance</i> your workflow with Toolify's powerful suite
-      of <span class="hero-focus">free online tools</span>.</span
+    <span>
+      Effortlessly <i>Search</i> and <i>Data Collection</i> Tools Share
+      of <span class="hero-focus">Stategic Insights</span>.</span
     >
   </h1>
   <p>
-    Unlock your productivity potential with Toolify - your one-stop-shop for
-    free online tools such as
-    <b>PDF tools, downloader tools, social media tools and much more</b>. Try
-    our tools now and see the difference for yourself!
+    
+    Dragable Tools
+    <b>Bookmarklets!</b>. Try
+    Drag These to your bookmark bar to use them anywhere on the web.
   </p>
   <div class="hero-btns">
     {% if user.is_authenticated %}
@@ -158,39 +158,102 @@
     </div>
 </section>
 
-<section class='testimonials'>
-    <div class='container'>
-    <h1 class='home-features-h1'>People enjoy using our tools</h1>
-    <div class="testimonials-section">
-        <div class="testimonials-container">
-            <div class="testimonial">
-              <img src="https://api.dicebear.com/5.x/thumbs/svg?seed=johndoe" alt="Testimonial image">
-              <p>"Toolify has made my work so much easier! The wide range of tools available have helped me to complete my tasks in different areas without having to switch between different websitess."</p>
-              <span>- John Doe, CEO</span>
+<section class='bookmarkelts'>
+  <div class="container">
+    <h1>Dragable Bookmarks</h1>
+    <div class="home-tools">
+      {% if user.is_authenticated %}
+        <a href="javascript:(function()%7Bjavascript:var%20s%3Ddocument.createElement(%27script%27)%3Bs.setAttribute(%27src%27,%27https://nthitz.github.io/turndownforwhatjs/tdfw.js%27)%3Bdocument.body.appendChild(s)%3B%7D)()%3B">
+      {% else %}
+        <a href="javascript:(function()%7Bjavascript:var%20s%3Ddocument.createElement(%27script%27)%3Bs.setAttribute(%27src%27,%27https://nthitz.github.io/turndownforwhatjs/tdfw.js%27)%3Bdocument.body.appendChild(s)%3B%7D)()%3B">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "material" class="css-class" height="40" width="40" %}
             </div>
-            <div class="testimonial">
-              <img src="https://api.dicebear.com/5.x/thumbs/svg?seed=janesmith" alt="Testimonial image">
-              <p>"I am really impressed with Toolify's user-friendly interface and the ease of use of its various tools. It has saved me a lot of time and effort."</p>
-              <span>- Jane Smith, Designer</span>
+            <p><b>Turn Down For What</b></p>
+          </div>
+          <p>Turn Down For</p>
+        </div>
+      </a>
+      {% if user.is_authenticated %}
+        <a href="/yt-thumbnail-downloader">
+      {% else %}
+        <a href="/login">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "video" class="css-class" height="40" width="40" %}
             </div>
-            <div class="testimonial">
-              <img src="https://api.dicebear.com/5.x/thumbs/svg?seed=bobjohnson" alt="Testimonial image">
-              <p>"I highly recommend Toolify to anyone looking for powerful tools for their daily tasks. The website offers a great user experience and the tools are incredibly useful."</p>
-              <span>- Bob Johnson, Manager</span>
+            <p><b>YT Thumbnail Downloader</b></p>
+          </div>
+          <p>Download any YouTube video thumbnail in your desired quality.</p>
+        </div>
+      </a>
+      {% if user.is_authenticated %}
+        <a href="/password-generator">
+      {% else %}
+        <a href="/login">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "key" class="css-class" height="40" width="40" %}
             </div>
-            <div class="testimonial">
-              <img src="https://api.dicebear.com/5.x/thumbs/svg?seed=lilychen" alt="Testimonial image">
-              <p>"Toolify has helped me to be more productive and efficient in my work. I can now complete my tasks faster and with greater accuracy."</p>
-              <span>- Lily Chen, Happy user</span>
+            <p><b>Password Generator</b></p>
+          </div>
+          <p>Generate strong passwords for your social media accounts in one click.</p>
+        </div>
+      </a>
+      {% if user.is_authenticated %}
+        <a href="/png-to-webp-convertor">
+      {% else %}
+        <a href="/login">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "image" class="css-class" height="40" width="40" %}
             </div>
-            <div class="testimonial">
-              <img src="https://api.dicebear.com/5.x/thumbs/svg?seed=sofiadavis" alt="Testimonial image">
-              <p>"I love Toolify's intuitive interface and the fact that I can access all the tools I need in one place. It has made my life so much easier!"</p>
-              <span>- Sofia Davis, Happy user</span>
+            <p><b>PNG to WebP Convertor</b></p>
+          </div>
+          <p>Convert any PNG image to WebP image and download directly on your device.</p>
+        </div>
+      </a>
+      {% if user.is_authenticated %}
+        <a href="/css-minifier">
+      {% else %}
+        <a href="/login">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "code" class="css-class" height="40" width="40" %}
             </div>
-          </div>          
-      </div>
-    </div>   
+            <p><b>CSS Minifier</b></p>
+          </div>
+          <p>Input your CSS code and receive a minified version of the code.</p>
+        </div>
+      </a>
+      {% if user.is_authenticated %}
+        <a href="/ip-lookup">
+      {% else %}
+        <a href="/login">
+      {% endif %}
+        <div class="home-tool">
+          <div class="tool-name-icom">
+            <div class="home-tool-icom">
+              {% icon "map-pin" class="css-class" height="40" width="40" %}
+            </div>
+            <p><b>IP Lookup</b></p>
+          </div>
+          <p>Check yout IP Adress details such as city, region, timezone and so on.</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </section>
 
 <section class='signup-cta container'>
